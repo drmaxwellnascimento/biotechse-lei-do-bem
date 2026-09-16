@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --teal:#029190; --teal-deep:#01706f; --teal-btn:#01807f;
-  --mint:#00ffa3; --mint-deep:#00c77f;
+  --teal:#1f9d92; --teal-deep:#157a71; --teal-btn:#17837a;
+  --mint:#00d69d; --mint-deep:#00b585;
   --cream:#f7eadf; --charcoal:#2d2d2d; --charcoal-mut:#414141; --offwhite:#f2f1f0;
   --line:rgba(2,145,144,.20); --line-strong:rgba(2,145,144,.34);
   --r:18px; --r-lg:28px;
@@ -20,20 +20,20 @@
   --font-body:'Hanken Grotesk','Tomato Grotesk',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#0b2423}
+html,body{background:#10151c}
 body{font-family:var(--font-body);color:var(--charcoal);line-height:1.5;min-height:100vh;
-  background:linear-gradient(160deg,#0b2423 0%,#0e3a39 60%,#0b2423 100%)}
+  background:linear-gradient(160deg,#10151c 0%,#171e28 55%,#10151c 100%)}
 .page{max-width:1060px;margin:0 auto;padding:20px 22px 40px;position:relative}
 .head{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0 22px}
 .head .logo{height:74px}
 .head .btns{display:flex;gap:10px;align-items:center}
 .ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;font-size:15px;padding:10px 16px;border-radius:100px;cursor:pointer;font-family:var(--font-body)}
 .ghost:hover{background:rgba(255,255,255,.16)}
-.glass{background:linear-gradient(150deg,rgba(2,145,144,.15) 0%,rgba(0,255,163,.09) 46%,rgba(255,255,255,.10) 100%);
+.glass{background:rgba(255,255,255,.045);
   border:1px solid rgba(255,255,255,.16);border-top:1px solid rgba(255,255,255,.28);
   box-shadow:0 18px 42px rgba(0,0,0,.25);border-radius:var(--r-lg);padding:38px 42px;color:#fff}
 .kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:100px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  background:rgba(0,255,163,.14);border:1px solid rgba(0,255,163,.34);color:var(--mint)}
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);color:#8fe8c9}
 h1,h2,h3{font-family:var(--font-display);letter-spacing:-.015em}
 h2{font-size:34px;line-height:1.15;margin-top:14px;color:#fff}
 h3{font-size:24px;color:#fff}
@@ -71,14 +71,14 @@ section.step.active{display:block}
 .kpi{border-radius:16px;padding:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15)}
 .kpi .lbl{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 .kpi .val{font-family:var(--font-display);font-size:28px;color:#fff;margin-top:6px}
-.kpi.hot{background:linear-gradient(130deg,rgba(0,255,163,.22),rgba(2,145,144,.16));border-color:rgba(0,255,163,.45)}
+.kpi.hot{background:rgba(0,214,157,.09);border-color:rgba(0,214,157,.30)}
 .kpi.hot .val{color:var(--mint);font-size:32px}
 .kpi small{color:rgba(255,255,255,.65);font-size:14px}
 .bars{margin-top:20px;display:grid;gap:12px}
 .bar-row{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:14px;font-size:15px;color:rgba(255,255,255,.85)}
 .bar{height:26px;border-radius:8px;background:rgba(255,255,255,.10);overflow:hidden;position:relative}
 .bar .fill{height:100%;border-radius:8px;transition:width .3s ease}
-.bar .fill.inv{background:linear-gradient(90deg,var(--teal),var(--teal-deep))}
+.bar .fill.inv{background:linear-gradient(90deg,#33515c,#263c46)}
 .bar .fill.liq{background:linear-gradient(90deg,var(--mint-deep),var(--mint))}
 .pctline{margin-top:14px;font-size:17px;color:rgba(255,255,255,.9)}
 .pctline b{color:var(--mint);font-size:22px}
